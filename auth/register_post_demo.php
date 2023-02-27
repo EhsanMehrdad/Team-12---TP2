@@ -183,10 +183,9 @@
 
                 if(!($_SESSION['validation']))
                 {
-                    /* Stage 2: Update database with valid registration details 
-                        (ignoring email verification for now via verified = TRUE */
+                    /* Stage 2: Update database with valid registration details */
                     $verification_token = hash('sha256', uniqid($_POST['username'], true));
-                    $query = 'INSERT INTO users (forename, surname, username, email, password, verification_token, verified) VALUES (:forename, :surname, :username, :email, :password, :verification_token, TRUE)';
+                    $query = 'INSERT INTO users (forename, surname, username, email, password, verification_token) VALUES (:forename, :surname, :username, :email, :password, :verification_token)';
                     $hash = password_hash($_POST['password'], PASSWORD_DEFAULT);
                     $sth = $db->prepare($query);
                     $sth->bindParam(':forename', $_POST['forename']);
@@ -197,10 +196,9 @@
                     $sth->bindParam(':verification_token', $verification_token);
                     $sth->execute();
 
-                    /* Stage 3: Initiate email verification process (redirecting to index.php for now) */
-                    //echo 'Send this URL to client: http://localhost/auth/scripts/verify.php?username='.$_POST['username'].'&verify='.$verification_token;
-                    //header('Location: /auth/scripts/verify.php');
-                    header('Location: /index.php');
+                    /* Stage 3: Initiate email verification process */
+                    echo 'Send this URL to client: http://localhost/auth/scripts/verify.php?username='.$_POST['username'].'&verify='.$verification_token;
+                    header('Location: /auth/scripts/verify.php');
                 }
             }
         ?>
