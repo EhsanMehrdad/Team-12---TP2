@@ -125,7 +125,6 @@
                         </div>
                     </div>
                </div>
-               hello
                <div class="contactForm">
                 <form action="thankyou.php">
                     <h2>Send a Message</h2>
