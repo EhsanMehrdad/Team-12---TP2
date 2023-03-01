@@ -83,11 +83,80 @@
     <!-- navbar -->
 
 
-     <!-- Code for contact page -->
+     <!-- Code for contact page 
      <div id="code">
       <h1>Please add your code here</h1>
-    </div>
+    </div>-->
      <!-- Code for contact page -->
+
+    <head>
+        <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="contact.css"> 
+    </head>
+    <body>
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+            </div>
+          </br>
+            <div class="container">
+                <div class="contactInfo">
+                   <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Aston St,<br>Birmingham,<br> B4 7ET</p>
+                        </div>
+                   </div> 
+                   <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>0121 204 3000</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-open" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>wecare@whitelily.co.uk</p>
+                        </div>
+                    </div>
+               </div>
+               <div class="contactForm">
+                <form action="thankyou.php">
+                    <h2>Send a Message</h2>
+                    </br>
+                    <div class="inputBox">
+                      <span style="color:white">Full Name</span>
+                    </br>
+                      <input type="text" name="" required="required" >  
+                    </div>
+                  </br>
+                    <div class="inputBox">
+                      <span style="color:white">Email</span> 
+                    </br>
+                      <input type="text" name="" required="required"> 
+                     </div>
+                  </br>
+                     <div class="inputBox">
+                        <span style="color:white">Type your Message</span>
+                    </br>
+                        <textarea required="required"></textarea>  
+                     </div>
+                  </br>
+                     <div class="inputBox">
+                        <input type="submit" name="" value="Send" id="send-button">
+                     </div>
+                  </br>
+                </form>
+               </div>  
+            </div>
+        </section>
+    </body>
+
 
   <!-- footer -->
   <footer id="footer">
