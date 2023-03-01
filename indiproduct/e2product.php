@@ -1,5 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+session_start();
+
+require_once('connected.php');
+?>
+<?php
+  
+    if(isset($_POST['submit'])){
+    if(!isset($_SESSION['auth'])){
+    echo "<script>alert('You must register an account and login to submit review.')</script>";}
+    else if(empty($_POST['rating']) || empty($_POST['review'])){
+      echo "<script>alert('Must complete all fields.')</script>";
+
+    }
+    else if(!is_numeric($_POST['rating']) || $_POST['rating'] != strval(round($_POST['rating'])) || $_POST['rating'] < 1 || $_POST['rating'] > 5){
+      echo "<script>alert('Expected numbers 1-5.')</script>";
+    }
+    else
+    {
+  
+        $rating = round($_POST['rating']);
+        $time = time();
+        $reviw = $_POST['review'];
+        $row = $db->prepare("INSERT INTO feedback ( username, review, rating, seconds_since_epoch) 
+        VALUES (?,?,?,?)");
+        $row->bindParam(1,  $_SESSION['auth'], PDO::PARAM_STR);
+        $row->bindParam(2, $review, PDO::PARAM_STR);
+        $row->bindParam(3,$rating, PDO::PARAM_STR);
+        $row->bindParam(4,$time, PDO::PARAM_STR);
+        $result= $row->execute();
+        echo "<script>alert('Review submission successful.')</script>";
+
+
+    }
+}
+
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -133,6 +170,23 @@
 
 
     </div>
+    <div class = "container">
+  <p class="revname">Write A Review</p>
+   <form class="formin" method="post" action="e2product.php">
+    <div>
+      <label >Rating </label><br>
+      <input type="text"  name="rating" placeholder="1-5" />
+    </div>
+    <div>
+      <label > Comment </label><br>
+      <textarea type="text"  name="review" placeholder="Things that are great aboutit. Things that arn't great about it." ></textarea>
+    </div>
+    <div >
+				<button name="submit" class="btnn">Submit</button>
+</div>
+      
+   </form>
+  </div>
 
     <!--hot offers-->
     <br>

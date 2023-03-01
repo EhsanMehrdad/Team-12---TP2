@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+session_start();
+
+require_once('connected.php');
+?>
+<?php
+  
+    if(isset($_POST['submit'])){
+    if(!isset($_SESSION['auth'])){
+    echo "<script>alert('You must register an account and login to submit review.')</script>";}
+    else if(empty($_POST['rating']) || empty($_POST['review'])){
+      echo "<script>alert('Must complete all fields.')</script>";
+
+    }
+    else if(!is_numeric($_POST['rating']) || $_POST['rating'] != strval(round($_POST['rating'])) || $_POST['rating'] < 1 || $_POST['rating'] > 5){
+      echo "<script>alert('Expected numbers 1-5.')</script>";
+    }
+    else
+    {
+  
+        $rating = round($_POST['rating']);
+        $time = time();
+        $reviw = $_POST['review'];
+        $row = $db->prepare("INSERT INTO feedback ( username, review, rating, seconds_since_epoch) 
+        VALUES (?,?,?,?)");
+        $row->bindParam(1,  $_SESSION['auth'], PDO::PARAM_STR);
+        $row->bindParam(2, $review, PDO::PARAM_STR);
+        $row->bindParam(3,$rating, PDO::PARAM_STR);
+        $row->bindParam(4,$time, PDO::PARAM_STR);
+        $result= $row->execute();
+        echo "<script>alert('Review submission successful.')</script>";
+
+
+    }
+}
+
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Jewellery Shop</title>
     <link rel="icon" type="image/x-icon" href="./images/Lily.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!--bootstrap links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -153,6 +190,23 @@
 
 
     </div>
+    <div class = "container">
+  <p class="revname">Write A Review</p>
+   <form class="formin" method="post" action="b1product.php">
+    <div>
+      <label >Rating </label><br>
+      <input type="text"  name="rating" placeholder="1-5" />
+    </div>
+    <div>
+      <label > Comment </label><br>
+      <textarea type="text"  name="review" placeholder="Things that are great aboutit. Things that arn't great about it." ></textarea>
+    </div>
+    <div >
+				<button name="submit" class="btnn">Submit</button>
+</div>
+      
+   </form>
+  </div>
 
     <!--hot offers-->
     <br>
