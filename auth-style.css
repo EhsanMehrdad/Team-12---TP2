@@ -4,7 +4,7 @@
 	padding: 30px;
 	background-color: rgb(67 0 86);
 	border-radius: 15px;
-    height: 600px;
+    height: auto;
     margin-left: 450px;
 }
 
@@ -21,7 +21,6 @@
 	color: white;
 	font-size: 18px;
 	padding: 10px;
-    
 }
 
 .auth-container .auth-div input {
@@ -31,8 +30,6 @@
 	padding: 10px;
 	margin: 10px auto;
 	border-radius: 5px;
-	
-    
 }
 
 
@@ -42,17 +39,7 @@
 }
 .auth-input input {
     display: block;
-	background-color: #ffc800;
 }
 .auth-input input[type=text], input[type=password], input[type=submit] {
     width:100%;
-}
-.auth-input input[type=checkbox] {
-    display: inline;
-}
-
-#fr {
-    margin-left: auto;
-    margin-right: 0;
-        
 }

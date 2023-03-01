@@ -1,13 +1,15 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login / Register</title>
+    <title>Sign in here</title>
     <link rel="icon" type="image/x-icon" href="./images/Lily.png">
-    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="auth-style.css">
     <!--bootstrap links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--bootstrap links --> 
@@ -83,7 +85,74 @@
 
     <!-- Code for contact page -->
     <div id="code">
-      <h1>Please add your code here</h1>
+        <?php
+            ini_set('display_errors', 1);
+            ini_set('display_startup_errors', 1);
+            error_reporting(E_ALL);
+            if(isset($_POST['id']) && isset($_POST['password']))
+            {
+                require_once($_SERVER['DOCUMENT_ROOT'] . '/auth/scripts/db.php');
+
+                $id_type= str_contains($_POST['id'], '@');
+                $query = 'SELECT * FROM users WHERE ' . ($id_type ? 'email' : 'username') . '=:id';
+
+                $sth = $db->prepare($query);
+                $sth->bindParam(':id', $_POST['id']);
+                $sth->execute();
+                $row = $sth->fetch(PDO::FETCH_ASSOC);
+
+                if($_POST['id'] == ($id_type ? $row['email'] : $row['username']) && password_verify($_POST['password'], $row['password']))
+                {
+                    if($row['verified'] == FALSE)
+                        header('Location: /auth/login.php?failed=1&reason=1'); # Email has not been verified
+                    else
+                    {
+                        $_SESSION['auth'] = [
+                            'forename' => $row['forename'],
+                            'surname' => $row['surname'],
+                            'username' => $row['username'],
+                            'email' => $row['email'],
+                            'password' => $row['password'],
+                            'privileges' => $row['privileges'],
+                        ];
+
+                        if(isset($_POST['remember-me']))
+                            $query = 'UPDATE users SET remember_me=TRUE WHERE ' . ($id_type ? 'email' : 'username') . ':=id';
+                            /***
+                                Code here.
+                            ***/
+                        header('Location: /index.php');
+                    }
+                }
+                else
+                    header('Location: /auth/login.php?failed=1&reason=0'); # Username or password is incorrect
+            }
+        ?>
+        <div class="auth-container">
+            <div class="auth-div">
+                <form method="post" action="login.php" class="auth-form">
+                    <h2>LOGIN</h2>
+                    <label>Username or email</label>
+                    <input type="text" class="auth-input" name="id" required>
+                    <label>Password</label>
+                    <input type="password" class="auth-input" name="password" required>
+                    <label>Remember me</label>
+                    <input type="checkbox" class="auth-input" name="remember-me">
+                    <a id="fr" href="forgot-password.php">Forgot your password?</a>
+                    <input type="submit" class="auth-input" value="Sign in">
+                    <br>
+                    <p>Don't have an account yet? <a href="register.php">Register now</a></p>
+                    <?php
+                        if(isset($_GET['failed']))
+                            if(isset($_GET['reason']))
+                                if($_GET['reason'] == 0)
+                                    echo "<pre style=\"color: red;\"\"><em>(Your login credentials are incorrect).</em></pre>";
+                                else if($_GET['reason'] == 1)
+                                    echo "<pre style=\"color: red;\"\"><em>(You have to verify your email address to activate your account).</em></pre>";
+                    ?>
+                </form>
+            </div>
+        </div>
     </div>
      <!-- Code for contact page -->
 
@@ -155,5 +224,4 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
-</body>
-</html>
+
