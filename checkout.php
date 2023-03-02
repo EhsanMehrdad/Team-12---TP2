@@ -129,13 +129,18 @@
               
               </div>
             </div>
+
+          </div>n
+        </div>
+        <input type="submit" value="finish" class="submit-btn">
+
           </div>
         </div>
         <a href="receipt.php">continue</a>
+
       </form>
     </div>
   </div>
-
 <footer>
 <!-- offer -->
 <div class="container" id="offer">
