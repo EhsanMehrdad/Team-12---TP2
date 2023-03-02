@@ -85,7 +85,7 @@
   <h1 class="text-center">Necklaces</h1>
   <div class="row" style="margin-top: 30px;">
     <div class="col-md-3 py-3 py-md-0">
-      <a href="n1product.php"><div class="card">
+      <a href="./indiproduct/n1product.php"><div class="card">
         <img src="./images/necklaces1.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Cassandra Pendant</h3>
@@ -102,7 +102,7 @@
       </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-    <a href="n2product.php"><div class="card">
+    <a href="./indiproduct/n2product.php"><div class="card">
         <img src="./images/necklaces2.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Olga Pendant Necklace</h3>
@@ -119,7 +119,7 @@
       </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-    <a href="n3product.php"><div class="card">
+    <a href="./indiproduct/n3product.php"><div class="card">
         <img src="./images/necklaces3.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Adela necklace</h3>
@@ -136,7 +136,7 @@
       </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-    <a href="n4product.php"><div class="card">
+    <a href="./indiproduct/n4product.php"><div class="card">
         <img src="./images/necklaces4.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Herlimes Necklace</h3>
@@ -154,12 +154,18 @@
     </div>
   </div> </a>
 </div> 
+
+
+
+
+
+
 <div id="code">
       <h1><div class="container" id="products">
   <h1 class="text-center">Rings</h1>
   <div class="row" style="margin-top: 30px;">
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/r1product.php"><div class="card">
         <img src="./images/rings1.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Harriet Ring</h3>
@@ -173,10 +179,10 @@
           </div>
           <h2>£435.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/n1product.php"><div class="card">
         <img src="./images/rings2.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Autya Ring</h3>
@@ -190,10 +196,10 @@
           </div>
           <h2>£1.529.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/r2product.php"><div class="card">
         <img src="./images/rings3.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Gianina Ring</h3>
@@ -207,10 +213,10 @@
           </div>
           <h2>£353.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/r4product.php"><div class="card">
         <img src="./images/rings4.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Esme Ring</h3>
@@ -226,18 +232,27 @@
         </div>
       </div>
     </div>
-  </div> 
+  </div></a>
 </div> 
+
+
+
+
+
+
+
+
+
 <div id="code">
       <h1><div class="container" id="products">
   <h1 class="text-center">Chains</h1>
   <div class="row" style="margin-top: 30px;">
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/c1product.php"><div class="card">
         <img src="./images/chains1.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Chain Nonna 3,7 mm</h3>
-          <p class="text-center">Gold</p>
+            <p class="text-center">Gold</p>
           <div class="star text-center">
             <i class="fa-solid fa-star checked"></i>
             <i class="fa-solid fa-star checked"></i>
@@ -247,10 +262,10 @@
           </div>
           <h2>£394.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/c2product.php"><div class="card">
         <img src="./images/chains2.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Paperclip Maron Chain</h3>
@@ -264,10 +279,10 @@
           </div>
           <h2>£910.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/c3product.php"><div class="card">
         <img src="./images/chains3.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Vienna Chain 5,45 mm</h3>
@@ -281,10 +296,10 @@
           </div>
           <h2>£856.00<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/c4product.php"><div class="card">
         <img src="./images/chains4.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Navis Chain</h3>
@@ -300,16 +315,24 @@
         </div>
       </div>
     </div>
-  </div> 
+  </div></a>
 </div> 
-</h1>
-    </div>
-    <div id="code">
+
+
+
+
+
+
+
+
+
+
+  <div id="code">
       <h1><div class="container" id="products">
   <h1 class="text-center">Bracelets</h1>
   <div class="row" style="margin-top: 30px;">
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/b1product.php"><div class="card">
         <img src="./Product page images/bracelets1.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Ely Bracelets</h3>
@@ -323,10 +346,10 @@
           </div>
           <h2>£869.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/b2product.php"><div class="card">
         <img src="./Product page images/bracelets2.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Aide Bracelet</h3>
@@ -340,10 +363,10 @@
           </div>
           <h2>£1.104.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/b3product.php"><div class="card">
         <img src="./Product page images/bracelets3.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Cariel Bracelets</h3>
@@ -357,10 +380,10 @@
           </div>
           <h2>£2.706.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/b4product.php"><div class="card">
         <img src="./Product page images/bracelets4.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Carlisa Bracelet</h3>
@@ -374,16 +397,21 @@
           </div>
           <h2>£1.750.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
-  </div> 
-</div> 
+  </div>
+</div>
+
+
+
+
+
 <div id="code">
 <h1><div class="container" id="products">
   <h1 class="text-center">Earrings</h1>
   <div class="row" style="margin-top: 30px;">
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/e1product.php"><div class="card">
         <img src="./Product page images/earrings1.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Hector Earrings</h3>
@@ -397,10 +425,10 @@
           </div>
           <h2>£500.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/e2product.php"><div class="card">
         <img src="./Product page images/earrings2.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Salvester Earrings</h3>
@@ -414,10 +442,10 @@
           </div>
           <h2>£2.104.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/e3product.php"><div class="card">
         <img src="./Product page images/earrings3.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Sectum Earrings</h3>
@@ -431,10 +459,10 @@
           </div>
           <h2>£3.000.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/e4product.php"><div class="card">
         <img src="./Product page images/earrings4.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Sofia Earrings</h3>
@@ -448,16 +476,22 @@
           </div>
           <h2>£2.241.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
   </div> 
 </div> 
+
+
+
+
+
+
 <div id="code">
 <h1><div class="container" id="products">
   <h1 class="text-center">Pendants</h1>
   <div class="row" style="margin-top: 30px;">
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/p1product.php"><div class="card">
         <img src="./Product page images/pendants1.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Arista Pendants</h3>
@@ -471,10 +505,10 @@
           </div>
           <h2>£702.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/p2product.php"><div class="card">
         <img src="./Product page images/pendants2.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Trint Pendant</h3>
@@ -488,10 +522,10 @@
           </div>
           <h2>£1.250.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/p3product.php"><div class="card">
         <img src="./Product page images/pendants3.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Faitto Pendant</h3>
@@ -505,10 +539,10 @@
           </div>
           <h2>£1.000.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
+    <a href="./indiproduct/p4product.php"><div class="card">
         <img src="./Product page images/pendants4.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Roher Pendant</h3>
@@ -522,16 +556,17 @@
           </div>
           <h2>£1.241.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
-      </div>
+      </div></a>
     </div>
   </div> 
 </div> 
-<div id="code">
-    <!-- Code for products -->
 
 
 
-  <!-- footer -->
+
+
+
+
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
