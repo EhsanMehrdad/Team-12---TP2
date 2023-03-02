@@ -251,7 +251,7 @@
                             echo "<pre><em>Must contain at least one lowercase character.</em></pre>";
                     ?>
                     <input type="submit" id="register-button" class="auth-input" value="Register">
-                    <p>Already have a login and password? <a href="/auth/login.php">Sign in</a></p>
+                    <p>Already have a login and password? <a href="login.php">Sign in</a></p>
                 </form>
             </div>
         </div>

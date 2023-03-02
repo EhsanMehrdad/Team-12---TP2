@@ -17,8 +17,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
-   
-
     <!--Font links-->
 </head>
 
@@ -883,7 +881,6 @@ landing page Carousel -->
     <div class="credits">
       Designed by:  <a href="#"> Team Number 12 (Aston University, Birmingham) </a>
     </div>
-
   </div>
 </footer>
 <!-- fotter -->

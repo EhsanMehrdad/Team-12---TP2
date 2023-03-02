@@ -123,70 +123,68 @@ font-style:oblique;
     <!-- Code for about us page -->
     
 
-
-  <!-- footer -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Lily Jewellery Shop</h4>
-            <p>
-              Birmingham <br>
-              Coventry <br>
-              London <br>
-            </p>
-            <strong>Phone:</strong> +44-7383588080 <br>
-            <strong>Email:</strong> Lily-Jewellery@gmail.com <br>
-          </div>
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Usefull Links</h4>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><a href="#">Necklaces</a></li>
-              <li><a href="#">Rings</a></li>
-              <li><a href="#">Chains</a></li>
-              <li><a href="#">Bracelets</a></li>
-              <li><a href="#">Pendants</a></li>
-              <li><a href="#">Earrings</a></li>
-              <li><a href="#">Watches</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Please follow us on Social Media</p>
-            <div class="social-links mt-3">
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-skype"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
+<!-- footer -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h4>Lily Jewellery Shop</h4>
+          <p>
+            Birmingham <br>
+            Coventry <br>
+            London <br>
+          </p>
+          <strong>Phone:</strong> +44-7383588080 <br>
+          <strong>Email:</strong> Lily-Jewellery@gmail.com <br>
+        </div>
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Usefull Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Necklaces</a></li>
+            <li><a href="#">Rings</a></li>
+            <li><a href="#">Chains</a></li>
+            <li><a href="#">Bracelets</a></li>
+            <li><a href="#">Pendants</a></li>
+            <li><a href="#">Earrings</a></li>
+            <li><a href="#">Watches</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Social Networks</h4>
+          <p>Please follow us on Social Media</p>
+          <div class="social-links mt-3">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
       </div>
     </div>
-    <hr>
-    <div class="container py-4">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Lily Jewellery Shop</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by:  <a href="#"> Team Number 12 (Aston University, Birmingham)</a>
-      </div>
-
+  </div>
+  <hr>
+  <div class="container py-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Lily Jewellery Shop</span></strong>. All Rights Reserved
     </div>
-  </footer>
-  <!-- fotter -->
+    <div class="credits">
+      Designed by:  <a href="#"> Team Number 12 (Aston University, Birmingham) </a>
+    </div>
+  </div>
+</footer>
+<!-- fotter -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
 </body>
