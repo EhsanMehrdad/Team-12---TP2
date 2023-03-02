@@ -129,13 +129,19 @@
               
               </div>
             </div>
+
           </div>n
         </div>
         <input type="submit" value="finish" class="submit-btn">
+
+          </div>
+        </div>
+        <a href="receipt.php">continue</a>
+
       </form>
     </div>
   </div>
-
+<footer>
 <!-- offer -->
 <div class="container" id="offer">
 <h1 class="text-center">Only With Lily Jewellery</h1>

@@ -92,7 +92,7 @@ if (isset($_POST['action']) && $_POST['action']=="change"){
         <div class="icons">
 
             <a href="login.php"><img src="./images/login.png" alt="" width="37px">Login</a>
-            <a href="login.php"><img src="./images/basket.png" alt="" width="37px">Basket</a>
+            <a href="basket2.php"><img src="./images/basket.png" alt="" width="37px">Basket</a
         </div>
 
     </div>
