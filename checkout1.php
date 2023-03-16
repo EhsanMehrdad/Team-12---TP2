@@ -1,48 +1,4 @@
-
-<?php
-session_start();
-include('GetUid.php');
-$status="";
-if (isset($_POST['pid']) && $_POST['pid']!=""){
-$pid = $_POST['pid'];
-$result = mysqli_query(
-$db,
-"SELECT * FROM `products` WHERE `pid`='$pid'"
-);
-$row = mysqli_fetch_assoc($result);
-$name = $row['name'];
-$pid = $row['pid'];
-$price = $row['price'];
-
-$cartArray = array(
-	$pid=>array(
-	'name'=>$name,
-	'pid'=>$pid,
-	'price'=>$price,
-	'stock'=>1)
-);
-
-
-if(empty($_SESSION["shopping_cart"])) {
-    $_SESSION["shopping_cart"] = $cartArray;
-    $status = "<div class='box'>Product is added to your cart!</div>";
-}else{
-    $array_keys = array_keys($_SESSION["shopping_cart"]);
-    if(in_array($pid,$array_keys)) {
-	  $status = "<div class='box' style='color:red;'>
-	  Product is already added to your cart!</div>";	
-    } else {
-    $_SESSION["shopping_cart"] = array_merge(
-    $_SESSION["shopping_cart"],
-    $cartArray
-    );
-    $status = "<div class='box'>Product is added to your cart!</div>";
-	}
-
-	}
-}
-?>
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -50,9 +6,7 @@ if(empty($_SESSION["shopping_cart"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="icon" type="image/x-icon" href="./images/Lily.png">
-    <link rel="stylesheet" href="basket.css">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="checkout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!--bootstrap links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -64,11 +18,12 @@ if(empty($_SESSION["shopping_cart"])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <!--Font links-->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg" id="navbar">
+      <!-- navbar -->
+
+      <nav class="navbar navbar-expand-lg" id="navbar">
     <div class="container-fluid">
     <img src="./images/logo.png" alt="" width="70px">
     <a class="navbar-brand" href="index.php" id="logo"> <span id="span1"></span>White Lily<span> Jewellery Shop</span></a>
@@ -120,46 +75,99 @@ if(empty($_SESSION["shopping_cart"])) {
       </form>
     </div>
     </div>
-</nav>
+    </nav>
 
-<?php
-if(!empty($_SESSION["shopping_cart"])) {
-$cart_count = count(array_keys($_SESSION["shopping_cart"]));
-?>
-<div class="cart_div">
-<a href="basket2.php"><img src="./images/basket.png" /> Cart<span>
-<?php echo $cart_count; ?></span></a>
+<!--checkout form--> 
+<br>   
+<div class="r">
+  <div class="col-75">
+    <div class="containers">
+      <form action="/cart/order-complete.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>White lily checkout page</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Billy lloyd">
+
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="Lily-Jewellery@gmail.com">
+
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="Birmingham B44">
+
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Birmingham">
+
+            <div class="row">
+              <div class="col-50">
+
+                <label for="state">Region</label>
+                <input type="text" id="city" name="city" placeholder="England">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Billy lloyd">
+           
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+           
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+            <div class="row">
+              <div class="col-50">
+
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="receipt.php">continue</a>
+      </form>
+    </div>
+  </div>
+
+<footer>
+<!-- offer -->
+<div class="container" id="offer">
+<h1 class="text-center">Only With Lily Jewellery</h1>
+  <div class="row">
+    <div class="col-md-3 py-3 py-md-0">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <h3>Free Shopping</h3>
+      <p>On orders over £500</p>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <i class="fa-solid fa-rotate-left"></i>
+      <h3>Free Returns</h3>
+      <p>Within 30 days</p>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <i class="fa-solid fa-truck"></i>
+      <h3>Fast Delivery</h3>
+      <p>All England</p>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <i class="fa-solid fa-thumbs-up"></i>
+      <h3>Big choice</h3>
+      <p>Of products</p>
+    </div>
+  </div>
 </div>
-<?php
-}
-?>
-<?php
-$result = mysqli_query($db,"SELECT * FROM `products`");
-while($row = mysqli_fetch_assoc($result)){
-    echo "<div class='product_wrapper'>
-    <form method='post' action=''>
-    <input type='hidden' name='pid' value=".$row['pid']." />
-    
-    <div class='name'>".$row['name']."</div>
-    
-    <div class='price'>$".$row['price']."</div>
-    
-    <button type='submit' class='buy'>Buy Now</button>
-    
-    </form>
-    </div>";
-        }
-mysqli_close($db);
-?>
+<!-- offer -->
+</body>
 
-<div style="clear:both;"></div>
-
-<div class="message_box" style="margin:10px 0px;">
-<?php echo $status; ?>
-</div>
-
-     <!-- footer -->
-     <footer id="footer">
+ <!-- footer -->
+ <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -223,5 +231,5 @@ mysqli_close($db);
   <!-- fotter -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-</body>
+
 </html>

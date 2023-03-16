@@ -1,24 +1,25 @@
 <?php
+session_start();
 $status="";
 if (isset($_POST['action']) && $_POST['action']=="remove"){
-if(!empty($_SESSION["cart"])) {
-    foreach($_SESSION["cart"] as $key => $value) {
+if(!empty($_SESSION["shopping_cart"])) {
+    foreach($_SESSION["shopping_cart"] as $key => $value) {
       if($_POST["pid"] == $key){
-      unset($_SESSION["cart"][$key]);
+      unset($_SESSION["shopping_cart"][$key]);
       $status = "<div class='box' style='color:red;'>
       Product is removed from your cart!</div>";
       }
-      if(empty($_SESSION["cart"]))
-      unset($_SESSION["cart"]);
+      if(empty($_SESSION["shopping_cart"]))
+      unset($_SESSION["shopping_cart"]);
       }		
 }
 }
 
 if (isset($_POST['action']) && $_POST['action']=="change"){
-  foreach($_SESSION["cart"] as &$value){
+  foreach($_SESSION["shopping_cart"] as &$value){
     if($value['pid'] === $_POST["pid"]){
-        $value['quantity'] = $_POST["quantity"];
-        break; // Stop the loop after we've found the product
+        $value['stock'] = $_POST["stock"];
+        break; // Stop the loop after we've found the products
     }
 }
   	
@@ -92,7 +93,7 @@ if (isset($_POST['action']) && $_POST['action']=="change"){
         <div class="icons">
 
             <a href="login.php"><img src="./images/login.png" alt="" width="37px">Login</a>
-            <a href="basket2.php"><img src="./images/basket.png" alt="" width="37px">Basket</a
+            <a href="basket1.php"><img src="./images/basket.png" alt="" width="37px">Basket</a>
         </div>
 
     </div>
@@ -106,107 +107,114 @@ if (isset($_POST['action']) && $_POST['action']=="change"){
 
 <div class="cart">
 <?php
-if(isset($_SESSION["cart"])){
+if(isset($_SESSION["shopping_cart"])){
     $total_price = 0;
 ?>	
 <table class="table">
 <tbody>
+<a href="basket1.php">previous page</a>
 <tr>
 <td></td>
-<td>pid</td>
 <td>ITEM NAME</td>
 <td>QUANTITY</td>
+<td>STOCK</td>
+<td>PRICE</td>
 <td>ITEMS TOTAL</td>
 </tr>	
 <?php		
-foreach ($_SESSION["cart"] as $products){
+foreach ($_SESSION["shopping_cart"] as $products){
 ?>
 <tr>
 <td>
-<img src='<?php echo $product["image"]; ?>' width="50" height="40" />
+<img src='<?php echo $products["image"]; ?>' width="200" height="200" />
 </td>
-<td><?php echo $product["name"]; ?><br />
+<td><?php echo $products["name"]; ?><br />
 <form method='post' action=''>
-<input type='hidden' name='pid' value="<?php echo $product["pid"]; ?>" />
+<input type='hidden' name='pid' value="<?php echo $products["pid"]; ?>" />
 <input type='hidden' name='action' value="remove" />
 <button type='submit' class='remove'>Remove Item</button>
 </form>
 </td>
 <td>
 <form method='post' action=''>
-<input type='hidden' name='pid' value="<?php echo $product["pid"]; ?>" />
+<input type='hidden' name='pid' value="<?php echo $products["pid"]; ?>" />
 <input type='hidden' name='action' value="change" />
-<select name='quantity' class='quantity' onChange="this.form.submit()">
-<option <?php if($product["quantity"]==1) echo "selected";?>
+<select name='stock' class='stock' onChange="this.form.submit()">
+<option <?php if($products["stock"]==0) echo "selected";?>
+value="0">0</option> 
+<option <?php if($products["stock"]==1) echo "selected";?>
 value="1">1</option>
-<option <?php if($product["quantity"]==2) echo "selected";?>
+<option <?php if($products["stock"]==2) echo "selected";?>
 value="2">2</option>
-<option <?php if($product["quantity"]==3) echo "selected";?>
+<option <?php if($products["stock"]==3) echo "selected";?>
 value="3">3</option>
-<option <?php if($product["quantity"]==4) echo "selected";?>
+<option <?php if($products["stock"]==4) echo "selected";?>
 value="4">4</option>
-<option <?php if($product["quantity"]==5) echo "selected";?>
+<option <?php if($products["stock"]==5) echo "selected";?>
 value="5">5</option>
-<option <?php if($product["quantity"]==6) echo "selected";?>
+<option <?php if($products["stock"]==6) echo "selected";?>
 value="6">6</option>
-<option <?php if($product["quantity"]==7) echo "selected";?>
-value="7">7</option><option>
-<option <?php if($product["quantity"]==8) echo "selected";?>
+<option <?php if($products["stock"]==7) echo "selected";?>
+value="7">7</option>
+<option <?php if($products["stock"]==8) echo "selected";?>
 value="8">8</option>
-<option <?php if($product["quantity"]==9) echo "selected";?>
+<option <?php if($products["stock"]==9) echo "selected";?>
 value="9">9</option>
-<option <?php if($product["quantity"]==10) echo "selected";?>
+<option <?php if($products["stock"]==10) echo "selected";?>
 value="10">10</option>
-<option <?php if($product["quantity"]==11) echo "selected";?>
+<option <?php if($products["stock"]==11) echo "selected";?>
 value="11">11</option>
-<option <?php if($product["quantity"]==12) echo "selected";?>
+<option <?php if($products["stock"]==12) echo "selected";?>
 value="12">12</option>
-<option <?php if($product["quantity"]==13) echo "selected";?>
+<option <?php if($products["stock"]==13) echo "selected";?>
 value="13">13</option>
-<option <?php if($product["quantity"]==14) echo "selected";?>
+<option <?php if($products["stock"]==14) echo "selected";?>
 value="14">14</option>
-<option <?php if($product["quantity"]==15) echo "selected";?>
+<option <?php if($products["stock"]==15) echo "selected";?>
 value="15">15</option>
-<option <?php if($product["quantity"]==16) echo "selected";?>
+<option <?php if($products["stock"]==16) echo "selected";?>
 value="16">16</option>
-<option <?php if($product["quantity"]==17) echo "selected";?>
+<option <?php if($products["stock"]==17) echo "selected";?>
 value="17">17</option>
-<option <?php if($product["quantity"]==18) echo "selected";?>
+<option <?php if($products["stock"]==18) echo "selected";?>
 value="18">18</option>
-<option <?php if($product["quantity"]==19) echo "selected";?>
+<option <?php if($products["stock"]==19) echo "selected";?>
 value="19">19</option>
-<option <?php if($product["quantity"]==20) echo "selected";?>
+<option <?php if($products["stock"]==20) echo "selected";?>
 value="20">20</option>
 </select>
 </form>
 </td>
-<td><?php echo "$".$product["price"]; ?></td>
-<td><?php echo "$".$product["price"]*$product["quantity"]; ?></td>
+<td><?php echo $products["stock"]; ?></td>
+<td><?php echo "£".$products["price"]; ?></td>
+<td><?php echo "£".$products["price"]*$products["stock"]; ?></td>
 </tr>
 <?php
-$total_price += ($product["price"]*$product["quantity"]);
+$total_price += ($products["price"]*$products["stock"]);
 }
 ?>
 <tr>
 <td colspan="5" alignment="right">
-<strong>TOTAL: <?php echo "$".$total_price; ?></strong>
+<strong>TOTAL: <?php echo "£".$total_price; ?></strong>
 </td>
 </tr>
 </tbody>
 </table>		
   <?php
-}else{
-	echo "<h3>Your cart is empty!</h3>";
-	}
-?>
+}
+  else{
+	   echo "<h3>Your cart is empty!</h3>";
+      }
+  ?>
 </div>
 
 <div style="clear:both;"></div>
 
 <div class="message_box" style="margin:10px 0px;">
+<?php echo $status;?>
 </div>
 
-<a href="checkout.php">checkout page</a>
+<a href="checkout1.php">checkout page</a>
 
      <!-- footer -->
      <footer id="footer">

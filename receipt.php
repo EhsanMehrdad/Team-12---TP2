@@ -20,13 +20,61 @@
     <!--Font links-->
 </head>
 <body>
+<nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+    <img src="./images/logo.png" alt="" width="70px">
+    <a class="navbar-brand" href="index.php" id="logo"> <span id="span1"></span>White Lily<span> Jewellery Shop</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span> <img src="./images/menu.png" alt="" width="30px"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.php">Product</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Category
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67, 0, 86);">
+            <li><a class="dropdown-item" href="#">Necklaces</a></li>
+            <li><a class="dropdown-item" href="#">Rings</a></li>
+            <li><a class="dropdown-item" href="#">Chains</a></li>
+            <li><a class="dropdown-item" href="#">Bracelets</a></li>
+            <li><a class="dropdown-item" href="#">Pendants</a></li>
+            <li><a class="dropdown-item" href="#">Earrings</a></li>
+
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.php">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.php">Contact</a>
+        </li>
+      </ul>
+      <div class="top-navbar">
+    <p></p>
+        <div class="icons">
+
+            <a href="login.php"><img src="./images/login.png" alt="" width="37px">Login</a>
+            <a href="basket1.php"><img src="./images/basket.png" alt="" width="37px">Basket</a>
+        </div>
+
+    </div>
+      <form class="d-flex" id="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+    </div>
+</nav>
 
 <h2>Your order has been completed</h2>
-
-
-
-
-
 
 
 </body>
