@@ -147,7 +147,9 @@
                         <textarea required="required"></textarea>  
                      </div>
                   </br>
-                
+                      <div class="inputBox">
+                        <input type="submit" name="" value="Send" id="send-button">
+                      </div>
                   </br>
                 </form>
                </div>  
