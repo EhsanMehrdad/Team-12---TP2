@@ -1,5 +1,5 @@
 <?php
-    $dbname     = "cs2tp";
+    $dbname     = "astoncv";
     $servername = "localhost";
     $username   = "root";
     $password   = "";
