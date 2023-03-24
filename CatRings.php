@@ -45,12 +45,13 @@
             Category
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67, 0, 86);">
-            <li><a class="dropdown-item" href="#">Necklaces</a></li>
-            <li><a class="dropdown-item" href="#">Rings</a></li>
-            <li><a class="dropdown-item" href="#">Chains</a></li>
-            <li><a class="dropdown-item" href="#">Bracelets</a></li>
-            <li><a class="dropdown-item" href="#">Pendants</a></li>
-            <li><a class="dropdown-item" href="#">Earrings</a></li>
+          <li><a class="dropdown-item" href="CatNecklaces.php">Necklaces</a></li>
+            <li><a class="dropdown-item" href="CatRings.php">Rings</a></li>
+            <li><a class="dropdown-item" href="CatChains.php">Chains</a></li>
+            <li><a class="dropdown-item" href="CatBracelets.php">Bracelets</a></li>
+            <li><a class="dropdown-item" href="CatPendants.php">Pendants</a></li>
+            <li><a class="dropdown-item" href="CatEarrings.php">Earrings</a></li>
+            <li><a class="dropdown-item" href="CatLatestProducts.php">Latest Products</a></li>
        
            
           </ul>
