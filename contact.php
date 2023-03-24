@@ -21,7 +21,7 @@
 
 
 </head>
-<body>
+<>
 
 
 
@@ -84,9 +84,67 @@
 
 
      <!-- Code for contact page -->
-     <div id="code">
-      <h1>Please add your code here</h1>
-    </div>
+    
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+            </div>
+          </br>
+            <div class="container">
+                <div class="contactInfo">
+                   <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Aston St,<br>Birmingham,<br> B4 7ET</p>
+                        </div>
+                   </div> 
+                   <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>0121 204 3000</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-open" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>wecare@whitelily.co.uk</p>
+                        </div>
+                    </div>
+               </div>
+               <div class="contactForm">
+                <form action="thankyou.php">
+                    <h2>Send a Message</h2>
+                    </br>
+                    <div class="inputBox">
+                      <span style="color:white">Full Name</span>
+                    </br>
+                      <input type="text" name="" required="required" >  
+                    </div>
+                  </br>
+                    <div class="inputBox">
+                      <span style="color:white">Email</span> 
+                    </br>
+                      <input type="text" name="" required="required"> 
+                     </div>
+                  </br>
+                     <div class="inputBox">
+                        <span style="color:white">Type your Message</span>
+                    </br>
+                        <textarea required="required"></textarea>  
+                     </div>
+                  </br>
+                      <div class="inputBox">
+                        <input type="submit" name="" value="Send" id="send-button">
+                      </div>
+                  </br>
+                </form>
+               </div>  
+            </div>
+        </section>
+  
      <!-- Code for contact page -->
 
   <!-- footer -->
