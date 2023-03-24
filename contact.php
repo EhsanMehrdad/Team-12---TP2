@@ -92,21 +92,21 @@
           </br>
             <div class="container">
                 <div class="contactInformation">
-                   <div class="box">
+                   <div class="contactBox">
                         <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
                         <div class="text">
                             <h3>Address</h3>
                             <p>Aston St,<br>Birmingham,<br> B4 7ET</p>
                         </div>
                    </div> 
-                   <div class="box">
+                   <div class="contactBox">
                         <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
                         <div class="text">
                             <h3>Phone</h3>
                             <p>0121 204 3000</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="contactBox">
                         <div class="icon"><i class="fa fa-envelope-open" aria-hidden="true"></i></div>
                         <div class="text">
                             <h3>Email</h3>

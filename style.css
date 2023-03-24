@@ -1071,7 +1071,7 @@ html{
     color: black;
 }
 
-.contact .box{
+.contact .contactBox{
 
     margin-left: 90px;
 }
@@ -1096,14 +1096,14 @@ html{
     flex-direction: column;
 }
 
-.contactInformation .box{
+.contactInformation .contactBox{
     position: relative;
     padding: 20px 0;
     display: flex;
 
 }
 
-.contactInformation .box .icon{
+.contactInformation .contactBox .icon{
     width: 60px;
     height: 60px;
     justify-content: center;
