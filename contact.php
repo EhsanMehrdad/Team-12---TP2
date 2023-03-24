@@ -91,7 +91,7 @@
             </div>
           </br>
             <div class="container">
-                <div class="contactInfo">
+                <div class="contactInformation">
                    <div class="box">
                         <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
                         <div class="text">

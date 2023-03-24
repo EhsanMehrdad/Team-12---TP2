@@ -1090,20 +1090,20 @@ html{
     margin-top: 30px;
 }
 
-.container .contactInfo{
+.contactInformation{
     width:50%;
     display: flex;
     flex-direction: column;
 }
 
-.container .contactInfo .box{
+.contactInformation .box{
     position: relative;
     padding: 20px 0;
     display: flex;
 
 }
 
-.container .contactInfo .box .icon{
+.contactInformation .box .icon{
     width: 60px;
     height: 60px;
     justify-content: center;
