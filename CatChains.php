@@ -82,7 +82,7 @@
     <!-- Code for products -->
   <div id="code">
       <h1><div class="container" id="products">
-  <h1 class="text-center">Chains</h1>
+  <h1 class="text-center">Please explore our collection of Chains</h1>
   <div class="row" style="margin-top: 30px;">
     <div class="col-md-3 py-3 py-md-0">
     <a href="./indiproduct/c1product.php"><div class="card">
