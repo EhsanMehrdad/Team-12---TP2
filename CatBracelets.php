@@ -83,11 +83,11 @@
     <!-- Code for products -->
     <div id="code">
       <h1><div class="container" id="products">
-  <h1 class="text-center">Please explore our collection of Bracelets</h1>
+      <h1 class="text-center">Please explore our collection of Bracelets</h1>
   <div class="row" style="margin-top: 30px;">
     <div class="col-md-3 py-3 py-md-0">
       <div class="card">
-        <img src="./Product page images/bracelets1.jpg" alt="">
+        <img src="./images/catimages/brace1.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Ely Bracelets</h3>
           <p class="text-center">VVS Diamond Quality</p>
@@ -104,7 +104,7 @@
     </div>
     <div class="col-md-3 py-3 py-md-0">
       <div class="card">
-        <img src="./Product page images/bracelets2.jpg" alt="">
+        <img src="./images/catimages/brace2.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Aide Bracelet</h3>
           <p class="text-center">VVS Diamond Quality</p>
@@ -121,7 +121,7 @@
     </div>
     <div class="col-md-3 py-3 py-md-0">
       <div class="card">
-        <img src="./Product page images/bracelets3.jpg" alt="">
+        <img src="./images/catimages/brace3.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Cariel Bracelets</h3>
           <p class="text-center">VVS Diamond Quality</p>
@@ -138,7 +138,7 @@
     </div>
     <div class="col-md-3 py-3 py-md-0">
       <div class="card">
-        <img src="./Product page images/bracelets4.jpg" alt="">
+        <img src="./images/catimages/brace4.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Carlisa Bracelet</h3>
           <p class="text-center">Diamond Colours</p>
@@ -155,6 +155,8 @@
     </div>
   </div> 
 </div> 
+
+
 
     <!-- Second row -->
     <div id="code">
@@ -230,6 +232,15 @@
     </div>
   </div> 
 </div> 
+
+
+
+
+
+
+
+
+
 
 
   <!-- footer -->
