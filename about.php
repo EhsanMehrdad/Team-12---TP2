@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="icon" type="image/x-icon" href="./images/Lily.png">
+    <link rel="icon" type="image/x-icon" href="./images/lily.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!--bootstrap links -->
@@ -28,7 +29,7 @@
 
     <nav class="navbar navbar-expand-lg" id="navbar">
     <div class="container-fluid">
-    <img src="./images/logo.png" alt="" width="70px">
+    <img src="./images/Logo.png" alt="" width="70px">
     <a class="navbar-brand" href="index.php" id="logo"> <span id="span1"></span>White Lily<span> Jewellery Shop</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span> <img src="./images/menu.png" alt="" width="30px"></span>
@@ -67,8 +68,9 @@
     <p></p>
         <div class="icons">
 
-            <a href="login.php"><img src="./images/login.png" alt="" width="37px">Login</a>
-            <a href="login.php"><img src="./images/basket.png" alt="" width="37px">Basket</a>
+            <?php $link1 = (isset($_SESSION['auth']) ? "logout" : "login"); $link2 = (isset($_SESSION['auth']) ? "account" : "basket"); ?>
+            <a href="<?="./auth/".$link1.".php"?>"><img src="./images/<?=$link1.".png"?>" alt="" width="37px"><?=ucfirst($link1)?></a>
+            <a href="<?=$link2.".php"?>"><img src="./images/<?=$link2.".png"?>" alt="" width="37px"><?=ucfirst($link2)?></a>
         </div>
 
     </div>
@@ -83,13 +85,45 @@
     <!-- navbar -->
 
     <!-- Code for about us page -->
-    <div id="code">
-      <h1>Please add your code here</h1>
-    </div>
+
+	<title>About Us</title>
+  
+	<style>
+body {
+    background-image: url("images/background\ gif1.gif");
+background-size: 100%;
+}
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+}
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+text-align: center;
+color: black;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;	}
+p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+color: black;
+font-style:oblique;
+  }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>About Us</h1>
+		<p>Welcome to WhiteLily Jewellery Shop! We are a team of passionate individuals who believe that accessories are the perfect way to elevate any outfit and express your personal style. Our goal is to provide you with a unique collection of high-quality accessories that are both fashionable and functional.</p>
+		<p>At our Accessories page, we strive to create a shopping experience that is easy, enjoyable, and stress-free. Our team has carefully selected each item to ensure that it meets our standards for quality and style.Our collection includes a variety of jewelry pieces, such as necklaces, bracelets, earrings, rings, and more. We carefully select our pieces to ensure that they are made with the finest materials, such as precious metals and gemstones, and crafted with exceptional attention to detail. We believe that accessories should be affordable and accessible to everyone, so we offer a range of price points to fit any budget.</p>
+    <p>Thank you for visiting our page, and we hope that you find something that inspires you to express your unique style. If you have any questions or feedback, please do not hesitate to contact us.</p>
+	</div>
+</body>
+
     <!-- Code for about us page -->
-
-
-
+    
 
 
   <!-- footer -->
