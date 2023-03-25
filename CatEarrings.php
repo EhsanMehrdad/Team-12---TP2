@@ -81,9 +81,85 @@
     </nav>
 
     <!-- Code for products -->
+    <div id="code">
+<h1><div class="container" id="products">
+<h1 class="text-center">Please explore our collection of Earrings</h1>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/catimages/ear1.png" alt="">
+        <div class="card-body">
+          <h3 class="text-center">Hector Earrings</h3>
+          <p class="text-center">VVS Diamond Quality</p>
+          <div class="star text-center">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+          <h2>£500.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/catimages/ear2.png" alt="">
+        <div class="card-body">
+          <h3 class="text-center">Salvester Earrings</h3>
+          <p class="text-center">VVS Diamond Quality</p>
+          <div class="star text-center">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+          <h2>£2.104.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/catimages/ear3.png" alt="">
+        <div class="card-body">
+          <h3 class="text-center">Sectum Earrings</h3>
+          <p class="text-center">VVS Diamond Quality</p>
+          <div class="star text-center">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+          <h2>£3.000.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="./images/catimages/ear4.png" alt="">
+        <div class="card-body">
+          <h3 class="text-center">Sofia Earrings</h3>
+          <p class="text-center">Diamond Colours</p>
+          <div class="star text-center">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+          <h2>£2.241.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div> 
+
+
+    <!-- second row -->
 <div id="code">
 <h1><div class="container" id="products">
-  <h1 class="text-center">Please explore our collection of Earrings</h1>
   <div class="row" style="margin-top: 30px;">
     <div class="col-md-3 py-3 py-md-0">
       <div class="card">
@@ -156,80 +232,8 @@
   </div> 
 </div> 
 
-    <!-- second row -->
-    <div id="code">
-<h1><div class="container" id="products">
-  <div class="row" style="margin-top: 30px;">
-    <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
-        <img src="./Product page images/earrings1.jpg" alt="">
-        <div class="card-body">
-          <h3 class="text-center">Hector Earrings</h3>
-          <p class="text-center">VVS Diamond Quality</p>
-          <div class="star text-center">
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-          </div>
-          <h2>£500.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
-        <img src="./Product page images/earrings2.jpg" alt="">
-        <div class="card-body">
-          <h3 class="text-center">Salvester Earrings</h3>
-          <p class="text-center">VVS Diamond Quality</p>
-          <div class="star text-center">
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-          </div>
-          <h2>£2.104.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
-        <img src="./Product page images/earrings3.jpg" alt="">
-        <div class="card-body">
-          <h3 class="text-center">Sectum Earrings</h3>
-          <p class="text-center">VVS Diamond Quality</p>
-          <div class="star text-center">
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-          </div>
-          <h2>£3.000.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-      <div class="card">
-        <img src="./Product page images/earrings4.jpg" alt="">
-        <div class="card-body">
-          <h3 class="text-center">Sofia Earrings</h3>
-          <p class="text-center">Diamond Colours</p>
-          <div class="star text-center">
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-          </div>
-          <h2>£2.241.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
-        </div>
-      </div>
-    </div>
-  </div> 
-</div> 
+
+
 
 
   <!-- footer -->
