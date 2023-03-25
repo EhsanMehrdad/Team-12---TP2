@@ -83,11 +83,11 @@
     <!-- Code for products -->
     <div id="code">
       <h1><div class="container" id="products">
-  <h1 class="text-center">Please explore our collection of Necklaces</h1>
+         <h1 class="text-center">Please explore our collection of Necklaces</h1>
   <div class="row" style="margin-top: 30px;">
     <div class="col-md-3 py-3 py-md-0">
       <a href="./indiproduct/n1product.php"><div class="card">
-        <img src="./images/necklaces1.jpg" alt="">
+        <img src="./images/catimages/neck1.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Cassandra Pendant</h3>
           <p class="text-center">Diamond/Black Diamond</p>
@@ -104,7 +104,7 @@
     </div>
     <div class="col-md-3 py-3 py-md-0">
     <a href="./indiproduct/n2product.php"><div class="card">
-        <img src="./images/necklaces2.jpg" alt="">
+        <img src="./images/catimages/neck2.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Olga Pendant Necklace</h3>
           <p class="text-center">Different Diamond Quality</p>
@@ -121,7 +121,7 @@
     </div>
     <div class="col-md-3 py-3 py-md-0">
     <a href="./indiproduct/n3product.php"><div class="card">
-        <img src="./images/necklaces3.jpg" alt="">
+        <img src="./images/catimages/neck3.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Adela necklace</h3>
           <p class="text-center">VVS Diamond Quality</p>
@@ -137,8 +137,8 @@
       </div></a>
     </div>
     <div class="col-md-3 py-3 py-md-0">
-    <a href="./indiproduct/n4product.php"><div class="card">
-        <img src="./images/necklaces4.jpg" alt="">
+    <a href="./indiproduct/n3product.php"><div class="card">
+        <img src="./images/catimages/neck4.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Herlimes Necklace</h3>
           <p class="text-center">Diamond Colours</p>
@@ -157,12 +157,8 @@
 </div> 
 
 
-
-
-
-
-
     <!-- Second row -->
+
     <div id="code">
       <h1><div class="container" id="products">
   <div class="row" style="margin-top: 30px;">
@@ -236,6 +232,15 @@
     </div>
   </div> </a>
 </div> 
+
+
+
+
+
+
+
+
+
 
 
 
