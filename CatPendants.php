@@ -38,7 +38,7 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Product</a>
+          <a class="nav-link" href="products.php">Product</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -81,13 +81,13 @@
     </nav>
 
     <!-- Code for products -->
-<div id="code">
+    <div id="code">
 <h1><div class="container" id="products">
-  <h1 class="text-center">Please explore our collection of Pendants</h1>
+<h1 class="text-center">Please explore our collection of Pendants</h1>
   <div class="row" style="margin-top: 30px;">
     <div class="col-md-3 py-3 py-md-0">
       <div class="card">
-        <img src="./Product page images/pendants1.jpg" alt="">
+        <img src="./images/catimages/pen1.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Arista Pendants</h3>
           <p class="text-center">Different Colours</p>
@@ -104,7 +104,7 @@
     </div>
     <div class="col-md-3 py-3 py-md-0">
       <div class="card">
-        <img src="./Product page images/pendants2.jpg" alt="">
+        <img src="./images/catimages/pen2.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Trint Pendant</h3>
           <p class="text-center">Gold Quality</p>
@@ -121,7 +121,7 @@
     </div>
     <div class="col-md-3 py-3 py-md-0">
       <div class="card">
-        <img src="./Product page images/pendants3.jpg" alt="">
+        <img src="./images/catimages/pen3.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Faitto Pendant</h3>
           <p class="text-center">Different Metal Available</p>
@@ -138,7 +138,7 @@
     </div>
     <div class="col-md-3 py-3 py-md-0">
       <div class="card">
-        <img src="./Product page images/pendants4.jpg" alt="">
+        <img src="./images/catimages/pen4.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Roher Pendant</h3>
           <p class="text-center">Different Metal Available</p>
@@ -155,11 +155,11 @@
     </div>
   </div> 
 </div> 
+
 
 
     <!-- Second row -->
-
-    <div id="code">
+<div id="code">
 <h1><div class="container" id="products">
   <div class="row" style="margin-top: 30px;">
     <div class="col-md-3 py-3 py-md-0">
@@ -232,6 +232,11 @@
     </div>
   </div> 
 </div> 
+
+
+
+
+
 
 
 
