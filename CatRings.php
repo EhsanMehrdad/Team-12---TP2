@@ -81,14 +81,13 @@
     </nav>
 
     <!-- Code for products -->
-    
-<div id="code">
+    <div id="code">
       <h1><div class="container" id="products">
-  <h1 class="text-center">Please explore our collection of Rings</h1>
+      <h1 class="text-center">Please explore our collection of Rings</h1>
   <div class="row" style="margin-top: 30px;">
     <div class="col-md-3 py-3 py-md-0">
     <a href="./indiproduct/r1product.php"><div class="card">
-        <img src="./images/rings1.jpg" alt="">
+        <img src="./images/catimages/ring1.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Harriet Ring</h3>
           <p class="text-center">VS/VVS Diamond Quality</p>
@@ -105,7 +104,7 @@
     </div>
     <div class="col-md-3 py-3 py-md-0">
     <a href="./indiproduct/n1product.php"><div class="card">
-        <img src="./images/rings2.jpg" alt="">
+        <img src="./images/catimages/ring2.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Autya Ring</h3>
           <p class="text-center">Different Diamond Colours</p>
@@ -122,7 +121,7 @@
     </div>
     <div class="col-md-3 py-3 py-md-0">
     <a href="./indiproduct/r2product.php"><div class="card">
-        <img src="./images/rings3.jpg" alt="">
+        <img src="./images/catimages/ring3.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Gianina Ring</h3>
           <p class="text-center">Different Stones Available</p>
@@ -139,7 +138,7 @@
     </div>
     <div class="col-md-3 py-3 py-md-0">
     <a href="./indiproduct/r4product.php"><div class="card">
-        <img src="./images/rings4.jpg" alt="">
+        <img src="./images/catimages/ring4.png" alt="">
         <div class="card-body">
           <h3 class="text-center">Esme Ring</h3>
           <p class="text-center">Different Stones Available</p>
@@ -156,16 +155,14 @@
     </div>
   </div></a>
 </div> 
-
-
-
+ 
 
 
 
 
 
     <!-- Second row -->
-    
+
     <div id="code">
       <h1><div class="container" id="products">
   <div class="row" style="margin-top: 30px;">
@@ -239,6 +236,15 @@
     </div>
   </div></a>
 </div> 
+
+
+
+
+
+
+
+
+    
 
 
 

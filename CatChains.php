@@ -81,9 +81,88 @@
     </nav>
 
     <!-- Code for products -->
+    <div id="code">
+      <h1><div class="container" id="products">
+      <h1 class="text-center">Please explore our collection of Chains</h1>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-3 py-3 py-md-0">
+    <a href="./indiproduct/c1product.php"><div class="card">
+        <img src="./images/catimages/chain1.png" alt="">
+        <div class="card-body">
+          <h3 class="text-center">Chain Nonna 3,7 mm</h3>
+            <p class="text-center">Gold</p>
+          <div class="star text-center">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+          <h2>£394.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+        </div>
+      </div></a>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+    <a href="./indiproduct/c2product.php"><div class="card">
+        <img src="./images/catimages/cahin2.png" alt="">
+        <div class="card-body">
+          <h3 class="text-center">Paperclip Maron Chain</h3>
+          <p class="text-center">Chain Lengths Available</p>
+          <div class="star text-center">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+          <h2>£910.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+        </div>
+      </div></a>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+    <a href="./indiproduct/c3product.php"><div class="card">
+        <img src="./images/catimages/chain3.png" alt="">
+        <div class="card-body">
+          <h3 class="text-center">Vienna Chain 5,45 mm</h3>
+          <p class="text-center">Different Chain Lengths Available</p>
+          <div class="star text-center">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+          <h2>£856.00<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+        </div>
+      </div></a>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+    <a href="./indiproduct/c4product.php"><div class="card">
+        <img src="./images/catimages/chain4.png" alt="">
+        <div class="card-body">
+          <h3 class="text-center">Navis Chain</h3>
+          <p class="text-center">Different Chain Lengths Available</p>
+          <div class="star text-center">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+          </div>
+          <h2>£550.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+        </div>
+      </div>
+    </div>
+  </div></a>
+</div> 
+
+
+
+
+
+
   <div id="code">
       <h1><div class="container" id="products">
-  <h1 class="text-center">Please explore our collection of Chains</h1>
   <div class="row" style="margin-top: 30px;">
     <div class="col-md-3 py-3 py-md-0">
     <a href="./indiproduct/c1product.php"><div class="card">
@@ -162,79 +241,7 @@
 
 
     <!-- Second row -->
-    <div id="code">
-      <h1><div class="container" id="products">
-  <div class="row" style="margin-top: 30px;">
-    <div class="col-md-3 py-3 py-md-0">
-    <a href="./indiproduct/c1product.php"><div class="card">
-        <img src="./images/chains1.jpg" alt="">
-        <div class="card-body">
-          <h3 class="text-center">Chain Nonna 3,7 mm</h3>
-            <p class="text-center">Gold</p>
-          <div class="star text-center">
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-          </div>
-          <h2>£394.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
-        </div>
-      </div></a>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-    <a href="./indiproduct/c2product.php"><div class="card">
-        <img src="./images/chains2.jpg" alt="">
-        <div class="card-body">
-          <h3 class="text-center">Paperclip Maron Chain</h3>
-          <p class="text-center">Chain Lengths Available</p>
-          <div class="star text-center">
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-          </div>
-          <h2>£910.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
-        </div>
-      </div></a>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-    <a href="./indiproduct/c3product.php"><div class="card">
-        <img src="./images/chains3.jpg" alt="">
-        <div class="card-body">
-          <h3 class="text-center">Vienna Chain 5,45 mm</h3>
-          <p class="text-center">Different Chain Lengths Available</p>
-          <div class="star text-center">
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-          </div>
-          <h2>£856.00<span><li class="fa-solid fa-cart-shopping"></li></span></h2>
-        </div>
-      </div></a>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-    <a href="./indiproduct/c4product.php"><div class="card">
-        <img src="./images/chains4.jpg" alt="">
-        <div class="card-body">
-          <h3 class="text-center">Navis Chain</h3>
-          <p class="text-center">Different Chain Lengths Available</p>
-          <div class="star text-center">
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-          </div>
-          <h2>£550.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
-        </div>
-      </div>
-    </div>
-  </div></a>
-</div> 
+  
 
 
 
