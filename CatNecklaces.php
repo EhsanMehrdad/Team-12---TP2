@@ -1,10 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
+<?php
+//session_start();
+
+require_once('connected.php');
+?>
+<?php
+
+    $row= $db->prepare("SELECT * From products WHERE category='Necklaces'");
+    $row->execute();
+    $products=$row->fetchAll(PDO::FETCH_ASSOC)
+
+    
+
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Necklaces</title>
+    <title>Category</title>
     <link rel="icon" type="image/x-icon" href="./images/Lily.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
@@ -25,7 +40,7 @@
 
     <!-- navbar -->
 
-    <nav class="navbar navbar-expand-lg" id="navbar">
+<nav class="navbar navbar-expand-lg" id="navbar">
     <div class="container-fluid">
     <img src="./images/logo.png" alt="" width="70px">
     <a class="navbar-brand" href="index.php" id="logo"> <span id="span1"></span>White Lily<span> Jewellery Shop</span></a>
@@ -38,20 +53,19 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="products.php">Product</a>
+          <a class="nav-link" href="Product2.php">Product</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Category
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67, 0, 86);">
-          <li><a class="dropdown-item" href="CatNecklaces.php">Necklaces</a></li>
+            <li><a class="dropdown-item" href="CatNecklaces.php">Necklaces</a></li>
             <li><a class="dropdown-item" href="CatRings.php">Rings</a></li>
             <li><a class="dropdown-item" href="CatChains.php">Chains</a></li>
             <li><a class="dropdown-item" href="CatBracelets.php">Bracelets</a></li>
             <li><a class="dropdown-item" href="CatPendants.php">Pendants</a></li>
             <li><a class="dropdown-item" href="CatEarrings.php">Earrings</a></li>
-            <li><a class="dropdown-item" href="CatLatestProducts.php">Latest Products</a></li>
        
            
           </ul>
@@ -83,14 +97,14 @@
     <!-- Code for products -->
     <div id="code">
       <h1><div class="container" id="products">
-         <h1 class="text-center">Please explore our collection of Necklaces</h1>
+  <h1 class="text-center">Please explore our collection of Necklaces</h1>
   <div class="row" style="margin-top: 30px;">
-    <div class="col-md-3 py-3 py-md-0">
-      <a href="./indiproduct/n1product.php"><div class="card">
-        <img src="./images/catimages/neck1.png" alt="">
+  <?php foreach ($products as $prods):?>
+    <div class="col-md-3 py-3 py-md-0" style="margin-bottom: 30px;" >
+      <a href="kwajo.php?page=productdet&pid=<?=$prods['pid']?> &model=<?=$prods['model']?>" ><div class="card">
+        <img src="./images/<?=$prods['img']?>" alt="">
         <div class="card-body">
-          <h3 class="text-center">Cassandra Pendant</h3>
-          <p class="text-center">Diamond/Black Diamond</p>
+          <h3 class="text-center"><?=$prods['name']?></h3>
           <div class="star text-center">
             <i class="fa-solid fa-star checked"></i>
             <i class="fa-solid fa-star checked"></i>
@@ -98,152 +112,16 @@
             <i class="fa-solid fa-star checked"></i>
             <i class="fa-solid fa-star checked"></i>
           </div>
-          <h2>£300.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
+          <h2><?=$prods['price']?> <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
         </div>
       </div></a>
     </div>
-    <div class="col-md-3 py-3 py-md-0">
-    <a href="./indiproduct/n2product.php"><div class="card">
-        <img src="./images/catimages/neck2.png" alt="">
-        <div class="card-body">
-          <h3 class="text-center">Olga Pendant Necklace</h3>
-          <p class="text-center">Different Diamond Quality</p>
-          <div class="star text-center">
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-          </div>
-          <h2>£250.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
-        </div>
-      </div></a>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-    <a href="./indiproduct/n3product.php"><div class="card">
-        <img src="./images/catimages/neck3.png" alt="">
-        <div class="card-body">
-          <h3 class="text-center">Adela necklace</h3>
-          <p class="text-center">VVS Diamond Quality</p>
-          <div class="star text-center">
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-          </div>
-          <h2>£1.200.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
-        </div>
-      </div></a>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-    <a href="./indiproduct/n3product.php"><div class="card">
-        <img src="./images/catimages/neck4.png" alt="">
-        <div class="card-body">
-          <h3 class="text-center">Herlimes Necklace</h3>
-          <p class="text-center">Diamond Colours</p>
-          <div class="star text-center">
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-          </div>
-          <h2>£95.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
-        </div>
-      </div>
-    </div>
-  </div> </a>
-</div> 
-
-
-    <!-- Second row -->
-
-    <div id="code">
-      <h1><div class="container" id="products">
-  <div class="row" style="margin-top: 30px;">
-    <div class="col-md-3 py-3 py-md-0">
-      <a href="./indiproduct/n1product.php"><div class="card">
-        <img src="./images/necklaces1.jpg" alt="">
-        <div class="card-body">
-          <h3 class="text-center">Cassandra Pendant</h3>
-          <p class="text-center">Diamond/Black Diamond</p>
-          <div class="star text-center">
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-          </div>
-          <h2>£300.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
-        </div>
-      </div></a>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-    <a href="./indiproduct/n2product.php"><div class="card">
-        <img src="./images/necklaces2.jpg" alt="">
-        <div class="card-body">
-          <h3 class="text-center">Olga Pendant Necklace</h3>
-          <p class="text-center">Different Diamond Quality</p>
-          <div class="star text-center">
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-          </div>
-          <h2>£250.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
-        </div>
-      </div></a>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-    <a href="./indiproduct/n3product.php"><div class="card">
-        <img src="./images/necklaces3.jpg" alt="">
-        <div class="card-body">
-          <h3 class="text-center">Adela necklace</h3>
-          <p class="text-center">VVS Diamond Quality</p>
-          <div class="star text-center">
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-          </div>
-          <h2>£1.200.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
-        </div>
-      </div></a>
-    </div>
-    <div class="col-md-3 py-3 py-md-0">
-    <a href="./indiproduct/n4product.php"><div class="card">
-        <img src="./images/necklaces4.jpg" alt="">
-        <div class="card-body">
-          <h3 class="text-center">Herlimes Necklace</h3>
-          <p class="text-center">Diamond Colours</p>
-          <div class="star text-center">
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-            <i class="fa-solid fa-star checked"></i>
-          </div>
-          <h2>£95.00 <span><li class="fa-solid fa-cart-shopping"></li></span></h2>
-        </div>
-      </div>
-    </div>
-  </div> </a>
-</div> 
+    <?php endforeach;?>
+    <!-- Code for products -->
 
 
 
-
-
-
-
-
-
-
-
-
+  <!-- footer -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
