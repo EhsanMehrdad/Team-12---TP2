@@ -106,13 +106,18 @@ $low= $db->prepare("SELECT * From feedback WHERE model = ? ");
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
+<<<<<<< HEAD
           <a class="nav-link" href="product2.php">Product</a>
+=======
+          <a class="nav-link" href="products.php">Product</a>
+>>>>>>> 87158f82b3b01a97df502bd0130af4d48fe2fc19
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Category
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67, 0, 86);">
+<<<<<<< HEAD
             <li><a class="dropdown-item" href="CatNecklace.php">Necklaces</a></li>
             <li><a class="dropdown-item" href="CatRings.php">Rings</a></li>
             <li><a class="dropdown-item" href="CatChains.php">Chains</a></li>
@@ -120,6 +125,15 @@ $low= $db->prepare("SELECT * From feedback WHERE model = ? ");
             <li><a class="dropdown-item" href="CatPendants.php">Pendants</a></li>
             <li><a class="dropdown-item" href="CatEarrings.php">Earrings</a></li>
             <li><a class="dropdown-item" href="Cat.php">Latest Products</a></li>
+=======
+            <li><a class="dropdown-item" href="#">Necklaces</a></li>
+            <li><a class="dropdown-item" href="#">Rings</a></li>
+            <li><a class="dropdown-item" href="#">Chains</a></li>
+            <li><a class="dropdown-item" href="#">Bracelets</a></li>
+            <li><a class="dropdown-item" href="#">Pendants</a></li>
+            <li><a class="dropdown-item" href="#">Earrings</a></li>
+            <li><a class="dropdown-item" href="#">Latest Products</a></li>
+>>>>>>> 87158f82b3b01a97df502bd0130af4d48fe2fc19
           </ul>
         </li>
         <li class="nav-item">
@@ -157,7 +171,11 @@ $low= $db->prepare("SELECT * From feedback WHERE model = ? ");
                 </div>
                 <div class = "product-div-right">
                 <span class = "product-name"><?=$products['name']?></span>
+<<<<<<< HEAD
                     <span class = "product-price">£<?=$products['price']?>.00</span>
+=======
+                    <span class = "product-price"><?=$products['price']?></span>
+>>>>>>> 87158f82b3b01a97df502bd0130af4d48fe2fc19
                     <p class = "product-description"><?=$products['description']?></p>
                     
 
@@ -233,11 +251,19 @@ $low= $db->prepare("SELECT * From feedback WHERE model = ? ");
 <p class="revname">Reviews</p><br>
 <?php foreach ($reviews as $revs): ?>
 <div id="review-tab" >
+<<<<<<< HEAD
 <div style="margin-bottom:12px;">
 <p class="revnd" style="color:purple;">name</p>
 <p class="revnd"style="margin-left: 450px; color:purple;">rating: <?=$revs['rating']?>/5</p>
 </div>  
 <p id="review-desc" ><?= $revs['review'];?></p>
+=======
+<div>
+<p class="revnd">name</p>
+<p class="revnd"style="margin-left: 450px;">rating: <?=$revs['rating']?>/5</p>
+</div>  
+<p id="review-desc"><?= $revs['review'];?></p>
+>>>>>>> 87158f82b3b01a97df502bd0130af4d48fe2fc19
 </div>
 <?php endforeach; ?>
 
