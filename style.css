@@ -1248,3 +1248,16 @@ html{
     background-color: #fff;
     color: rgb(67 0 86);
 }
+
+
+#rings button{
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(67 0 86);
+    border: 2px solid rgb(67 0 86);
+}
+
+.formin button:hover{
+    background-color: #fff;
+    color: rgb(67 0 86);
+}

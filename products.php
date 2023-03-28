@@ -85,7 +85,7 @@
   <h1 class="text-center">Necklaces</h1>
   <div class="row" style="margin-top: 30px;">
     <div class="col-md-3 py-3 py-md-0">
-      <a href="./indiproduct/n1product.php"><div class="card">
+      <a href="./indiproduct/n1product.php" ><div class="card">
         <img src="./images/necklaces1.jpg" alt="">
         <div class="card-body">
           <h3 class="text-center">Cassandra Pendant</h3>
